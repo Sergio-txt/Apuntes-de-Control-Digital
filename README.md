@@ -1,7 +1,14 @@
-# Titulo de la clase
+# Fundamentos y Procedimientos de la Conversión A/D y D/A en Control Digital
 La conversión entre señales analógicas y digitales es un proceso fundamental en los sistemas de control digital, en donde se requiere adaptar señales continuas provenientes del mundo físico a un formato que pueda ser procesado por sistemas digitales, y viceversa, por esta razón, dentro del ámbito de la ingeniería, este proceso reúne la recolección de datos a través de sensores que interactúan con señales, las cuales deben ser transformadas adecuadamente para que los controladores digitales puedan manejarlas de manera eficiente. En este sentido, la conversión A/D permite convertir una señal analógica, como temperatura, velocidad o humedad, en una señal digital para su procesamiento, mientras que la conversión D/A hace posible que las señales digitales se conviertan nuevamente a analógicas para controlar dispositivos en el mundo real.
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+
+## Indice
+1. Señales Analógicas y Digitales
+2. Procedimiento de Conversión A/D
+3. Procedimiento de Conversión D/A
+4. Implementación Física y Modelos Matemáticos
+5. Aplicaciones Prácticas y Ejercicios
+6. Conclusiones
+
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
