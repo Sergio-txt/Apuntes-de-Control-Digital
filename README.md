@@ -13,17 +13,17 @@ Las señales pueden clasificarse en dos tipos fundamentales: analógicas y digit
 
 A continuación se detallan las diferencias y características fundamentales de ambos tipos de señales:
 
->🔑 *Señal Analóga:* Las señales analógicas son continuas tanto en el tiempo como en la amplitud, lo que significa que pueden llegar a tomar cualquier valor dentro de un rango continuo, representando información de manera fluida e ininterrumpida. 
+>🔑 *Señal Analóga:* Las señales analógicas son continuas tanto en el tiempo como en la amplitud, lo que significa que pueden llegar a tomar cualquier valor dentro de un rango continuo, representando información de manera fluida e ininterrumpida. [1] 
 
 ![Señal Analóga](http://xkiller-damndx.mex.tl/imagesnew2/0/0/0/2/1/3/9/8/2/5/Standing_wave_2.gif)
 
 Figura 1. Señal Analóga
 
->🔑 *Señal Digital:* Son discretas tanto en tiempo como en amplitud, puesto que representan información en forma de secuencias de valores binarios (0 y 1), obtenidas mediante la conversión de señales analógicas.
+>🔑 *Señal Digital:* Son discretas tanto en tiempo como en amplitud, puesto que representan información en forma de secuencias de valores binarios (0 y 1), obtenidas mediante la conversión de señales analógicas. [2]
 
 ![Señal Analóga](https://miro.medium.com/v2/resize:fit:1000/1*T05QpHC6DaUl7-9Xrqo5IA.gif)
 
-Figura 2. Señal Analóga
+Figura 2. Digital
 
 Comparaiva entre señales
 | Características 	| Señal Analogica 	| Señal Digital 	|
@@ -39,3 +39,6 @@ Comparaiva entre señales
 ## 5. Aplicaciones Prácticas y Ejercicios
 ## 6. Conclusiones
 ## Referencias
+[1] “Comunicaciones”. Tipos y Modos de Comunicaciones. Accedido el 28 de agosto de 2024. [En línea]. Disponible: http://xkiller-damndx.mex.tl/frameset.php?url=/1488142_Caracteristicas-de-las-senales-y-Conceptos-de-Ondas.html
+
+[2] F. Miyara, CONVERSORES D/A Y A/D, 2a ed. 2004.
