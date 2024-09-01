@@ -41,7 +41,9 @@ El muestreo es el proceso mediante el cual una señal analógica continua en el 
 #### Teorema del muestreo
 En el teorema del muestreo establece que para representar correctamente una señal analógica en forma digital, la frecuencia de muestreo debe ser al menos el doble de la frecuencia máxima de la señal continua. Este principio, tambien conocido como el teorema de Nyquist-Shannon, asegura que la señal digital resultante conserve toda la información de la señal original, por tanto, si la frecuencia de muestreo es insuficiente, pueden surgir problemas como el aliasing, donde las frecuencias altas se confunden con frecuencias bajas, distorsionando la señal y comprometiendo la calidad de la representación digital.
 
-![Señal Analóga](https://miro.medium.com/v2/resize:fit:1000/1*T05QpHC6DaUl7-9Xrqo5IA.gif)
+💡**Ejemplo 1:** En este caso se tienen dos figuras. En la primera, se puede observar que se cumple con la condición de Nyquist, lo que evita que las copias del espectro de la señal original se mezclen y se recupere correctamente 
+
+![Señal Analóga](https://github.com/Evellyn27/Apuntes-de-Control-Digital/blob/9aaa463948100481486a4bca02c072d98d89e6a6/Screenshot%202024-08-31%20201222.png)
 ![Señal Analóga](https://github.com/Evellyn27/Apuntes-de-Control-Digital/blob/3c0e776d83616f144ae21ed4f9f465e3fe096eea/Screenshot%202024-08-31%20201541.png)
 
 
