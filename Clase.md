@@ -84,6 +84,26 @@ $$\mathcal{Z}\{x[n + k]\} = z^k X(z)$$
 * $z^{k}$ es un factor de escala que representa el adelanto.
 
 
+### 2.3 Funcion de tranferencia discreta
+La función de transferencia de un sistema discreto es una representación matemática que relaciona la entrada y la salida del sistema en el dominio Z. Se define como el cociente entre la Transformada Z de la salida y la Transformada Z de la entrada, bajo condiciones iniciales nulas.
+Si $X(z)$ es la Transformada Z de la entrada $x[n]$ y $Y(z)$ es la Transformada Z de la salida $y[n]$, la función de transferencia $H(z)$ se define como:
+$$H(z) = \frac{Y(z)}{X(z)}$$
+
+>Donde
+* $Y(z)$ es la Transformada Z de la salida del sistema.
+* $X(z)$ es la Transformada Z de la entrada del sistema.
+
+### 2.4 Pasar de una función de transferencia en atraso a adelanto
+Supongamos que tienes una función de transferencia en el dominio Z que involucra un atraso. La función de transferencia en atraso es:
+$$H(z) = \frac{Y(z)}{X(z)}$$
+donde $Y(z)$ y $X(z)$ están relacionadas a través del atraso en el tiempo.
+$z^{-k} \text{ a } \frac{a}{z^k}$ donde $k$ es el número de unidades de tiempo en el que se adelanta la secuencia.
+
+#### 2.4.1 Proceso 
+>Escribe la Función de Transferencia Original:
+Supongamos que tienes una función de transferencia en atraso que tiene el siguiente formato:
+
+
 
 
 
