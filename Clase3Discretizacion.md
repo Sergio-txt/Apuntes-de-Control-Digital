@@ -22,12 +22,35 @@ Primero, se determina la respuesta al impulso del filtro analógico. La respuest
  $h_a(t)$ es la salida del filtro cuando se aplica un impulso unitario $δ(t)$ como entrada.
 
 >🔑*Transformación a la Respuesta al Impulso Digital:*
-*La respuesta al impulso analógica  $h_a(t)$ se convierte en una secuencia discreta aplicando un muestreo en el tiempo. Esto se hace evaluando 
+*La respuesta al impulso analógica $h_a(t)$ se convierte en una secuencia discreta aplicando un muestreo en el tiempo. Esto se hace evaluando 
  $h_a(t)$  en intervalos de tiempo $T$, donde $T$ es el período de muestreo del sistema digital.
 
 >🔑*Transformación de la Función de Transferencia:*
 * La función de transferencia del filtro digital $H(z)$  se obtiene a partir de la transformada Z de la respuesta al impulso digital. Esto se puede hacer utilizando la transformada Z de la secuencia discreta obtenida en el paso anterior.
 
+Ventajas:
+* Simplicidad: El método de invarianza al impulso es relativamente simple y directo, especialmente cuando se trabaja con filtros que tienen una respuesta al impulso que puede ser fácilmente muestreada.
+*Preservación de la Forma de Respuesta: Conserva la forma de la respuesta al impulso del filtro analógico, lo que puede ayudar a mantener ciertas propiedades del filtro original.
+
+Desventajas: 
+* Distorsión de Frecuencia: El método puede introducir distorsiones en la respuesta en frecuencia debido a la aproximación de la transformación.
+* Limitaciones en el Diseño: Puede no ser adecuado para todos los tipos de filtros analógicos, especialmente si la respuesta al impulso analógica no es fácilmente muestreable.
+
+## 3. Método de Invarianza al impulso
+ El Método de Invarianza al Paso es una técnica utilizada para diseñar filtros digitales a partir de filtros analógicos mediante la preservación de la respuesta al paso de los filtros. Este método se basa en la idea de que la respuesta de un sistema digital a una entrada de escalón unitario debe coincidir con la respuesta del filtro analógico a una entrada de escalón unitario.
+
+>🔑*Obtención de la Respuesta al Paso Analógica:*
+* Primero, se determina la respuesta al paso del filtro analógico. La respuesta al paso $h_a(t)$  es la salida del filtro cuando se aplica una entrada de escalón unitario $u(t)$ como entrada.
+*Matemáticamente, se puede expresar como  $h_a(t)$ donde $ha(t)\=L−1{Ha(s)s}h\_a(t) = \\mathcal{L}^{-1}\\left\\{\\frac{H\_a(s)}{s}\\right\\}ha​(t)\=L−1{sHa​(s)​}$
+
+
+
+>🔑*Transformación a la Respuesta al Paso Digital:*
+*La respuesta al impulso analógica $h_a(t)$ se convierte en una secuencia discreta aplicando un muestreo en el tiempo. Esto se hace evaluando 
+ $h_a(t)$  en intervalos de tiempo $T$, donde $T$ es el período de muestreo del sistema digital.
+
+>🔑*Transformación de la Función de Transferencia:*
+* La función de transferencia del filtro digital $H(z)$  se obtiene a partir de la transformada Z de la respuesta al impulso digital. Esto se puede hacer utilizando la transformada Z de la secuencia discreta obtenida en el paso anterior.
 
 
 
