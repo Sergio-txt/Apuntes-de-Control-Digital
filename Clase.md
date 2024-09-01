@@ -116,10 +116,18 @@ $$H(z) = \frac{z^2 (1 + a_1 z^{-1} + a_2 z^{-2})}{z^2 (b_0 + b_1 z^{-1} + b_2 z^
 $$\[ H(z) = \frac{1 + a_1 z + a_2 z^2}{b_0 z^2 + b_1 z + b_2} \]$$
 Esta es la función de transferencia equivalente que ahora está en el formato de adelanto.
 
-## 3. Transformada Z
+## 4. Sitemas Causales y no causales
+### 4.1 Causales
+Un sistema causal es aquel cuyo comportamiento en cualquier instante de tiempo depende únicamente de valores presentes y pasados de la entrada. En otras palabras, un sistema es causal si no reacciona a eventos futuros. Esta propiedad es fundamental en sistemas físicos y de procesamiento de señales reales porque no se puede anticipar el futuro.
+>🔑 *Caracteristicas:*
+* Pueden ser implementados en hardware y software de manera práctica.
+* Ejemplos incluyen filtros digitales en procesamiento de señales y sistemas de control.
 
-
-
+### 4.1 No Causales
+Un sistema no causal es aquel cuyo comportamiento puede depender de valores futuros de la entrada. En otras palabras, un sistema no causal puede anticipar los valores futuros de la entrada para producir una salida en el presente. Los sistemas no causales son más teóricos en muchos contextos porque no son realizables en la práctica; requieren conocimiento de la entrada futura.
+>🔑 *Caracteristicas:*
+* A menudo utilizados en análisis y diseño teórico.
+* En la práctica, pueden ser aproximados mediante técnicas como el "retardo causal" para hacerlos realizables.
 
 Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
 ### 3.2. Numeración de subsecciones
