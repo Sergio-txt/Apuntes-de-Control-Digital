@@ -11,11 +11,16 @@ Una herramienta matemática fundamental para el análisis y diseño de sistemas 
 ## 1. Representación matemática de los sistemas discretos
 
 >🔑 *Ecuacion en Diferencias:* Una ecuación que muestra la relación entre los valores consecutivos de una secuencia y las diferencias entre ellos. A menudo se reorganizan como una fórmula recursiva para que la salida de un sistema pueda calcularse a partir de la señal de entrada y salidas pasadas.
-![Señal Analóga](http://xkiller-damndx.mex.tl/imagesnew2/0/0/0/2/1/3/9/8/2/5/Standing_wave_2.gif)
 
-Figura 1. Señal Analóga
 
->🔑 *Señal Digital:* Son discretas tanto en tiempo como en amplitud, puesto que representan información en forma de secuencias de valores binarios (0 y 1), obtenidas mediante la conversión de señales analógicas.
+>🔑 *Ecuaciones en Diferencias Lineales:* Las ecuaciones en diferencias lineales son aquellas en las que la relación entre las variables es lineal. Esto significa que cada término de la ecuación es una función lineal de la variable de estado o de entrada.Estas ecuaciones se pueden expresar en una forma general como:
+$$\[y(k) + a_1 y(k-1) + a_2 y(k-2) + \dots + a_n y(k-n) = b_0 u(k) + b_1 u(k-1) + \dots + b_m u(k-m)\]$$
+>Donde:
+>* y(k) es la salida en el instante k.
+>* u(k) es la entrada en el instante k.
+>* $$\[ y(k) + a_1 y(k-1) + a_2 y(k-2) + \dots + a_n y(k-n) = b_0 u(k) + b_1 u(k-1) + \dots + b_m u(k-m) \]$$
+
+
 
 
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
