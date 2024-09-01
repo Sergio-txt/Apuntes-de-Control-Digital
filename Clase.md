@@ -3,27 +3,44 @@ Una herramienta matemática fundamental para el análisis y diseño de sistemas 
 
 ## Indice
 1. Representación matemática de los sistemas discretos
-2. Transformada Z
-3. Función de transferencia discreta
-4. Aplicaciones Prácticas y Ejercicios
-5. Conclusiones
+2. Solucion de Ecuaciones en Diferencias
+3. Transformada Z
+4. Función de transferencia discreta
+5. Aplicaciones Prácticas y Ejercicios
+6. Conclusiones
 
 ## 1. Representación matemática de los sistemas discretos
+### 1.1. *Ecuación en Diferencias:* Una ecuación que muestra la relación entre los valores consecutivos de una secuencia y las diferencias entre ellos. A menudo se reorganizan como una fórmula recursiva para que la salida de un sistema pueda calcularse a partir de la señal de entrada y salidas pasadas.
 
->🔑 *Ecuacion en Diferencias:* Una ecuación que muestra la relación entre los valores consecutivos de una secuencia y las diferencias entre ellos. A menudo se reorganizan como una fórmula recursiva para que la salida de un sistema pueda calcularse a partir de la señal de entrada y salidas pasadas.
 
-
->🔑 *Ecuaciones en Diferencias Lineales:* Las ecuaciones en diferencias lineales son aquellas en las que la relación entre las variables es lineal. Esto significa que cada término de la ecuación es una función lineal de la variable de estado o de entrada.Estas ecuaciones se pueden expresar en una forma general como:
+### 1.2. *Ecuaciones en Diferencias No Lineales:* Las ecuaciones en diferencias lineales son aquellas en las que la relación entre las variables es lineal. Esto significa que cada término de la ecuación es una función lineal de la variable de estado o de entrada.Estas ecuaciones se pueden expresar en una forma general como:
 $$\[y(k) + a_1 y(k-1) + a_2 y(k-2) + \dots + a_n y(k-n) = b_0 u(k) + b_1 u(k-1) + \dots + b_m u(k-m)\]$$
 >Donde:
->* y(k) es la salida en el instante k.
->* u(k) es la entrada en el instante k.
->* $$\[ y(k) + a_1 y(k-1) + a_2 y(k-2) + \dots + a_n y(k-n) = b_0 u(k) + b_1 u(k-1) + \dots + b_m u(k-m) \]$$
+* y(k) es la salida en el instante k.
+* u(k) es la entrada en el instante k.
+* $$\[ y(k) + a_1 y(k-1) + a_2 y(k-2) + \dots + a_n y(k-n) = b_0 u(k) + b_1 u(k-1) + \dots + b_m u(k-m) \]$$
+
+### 1.3. *Ecuaciones en Diferencias Lineales:*
+Las ecuaciones en diferencias no homogéneas incluyen un término que no depende de la variable de estado, como una entrada o una fuerza externa. Su forma general es:
+$$y(k) + a_1 y(k-1) + a_2 y(k-2) + \dots + a_n y(k-n) = b_0 u(k) + b_1 u(k-1) + \dots + b_m u(k-m)$$
+Las ecuaciones homogéneas describen sistemas que no tienen una entrada externa y son útiles para estudiar la respuesta natural del sistema.
+
+### 1.4. *Ecuaciones en Diferencias No Homogéneas:*
+Las ecuaciones en diferencias no homogéneas incluyen un término que no depende de la variable de estado, como una entrada o una fuerza externa. Su forma general es:
+$$y(k) + a1 * y(k-1) + a2 * y(k-2) + ... + an * y(k-n) = b0 * u(k) + b1 * u(k-1) + ... + bm * u(k-m)$$
+Donde f(k) es una función que representa la entrada o una perturbación externa. Estas ecuaciones describen sistemas que responden a un estímulo exter
+
+## 2. Solucion de Ecuaciones en Diferencias
+### 2.1. *Métodos Iterativos:*
+Este método consiste en calcular los valores sucesivos de la variable de estado de manera recursiva, utilizando los valores iniciales conocidos y aplicando la ecuación en diferencias repetidamente. Es especialmente útil para ecuaciones en diferencias lineales de primer orden o de bajo orden.
+Ejemplo: Si tienes una ecuación en diferencias de primer orden:
+$$y(k) = 0.5 \cdot y(k-1) + u(k)$$
+Puedes calcular $$y(k)$$ para $$k = 1, 2, 3 ...$$ usando un valor inicial  $$y(0)$$ y la secuencia de valores de  $$u(k)$$
+
+### 2.2. *Métodos Iterativos:*Transformada Z
 
 
 
-
-Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
 Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
 ### 3.2. Numeración de subsecciones
