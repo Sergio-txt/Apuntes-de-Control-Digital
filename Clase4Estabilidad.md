@@ -21,63 +21,34 @@ La estabilidad absoluta en sistemas discretos se refiere a la capacidad del sist
 | Comportamiento de los Polos 	| Polos con partes reales negativas aseguran que la respuesta se amortigua con el tiempo 	| Polos dentro del círculo unitario aseguran que la respuesta se atenúa con el tiempo 	|
 
 ## 2. Espacios de LaPlace y Z
-La Transformada de LaPlace es una técnica matemática comúnmente empleada para examinar sistemas lineales invariantes en el tiempo, tales como mecanismos, circuitos eléctricos y sistemas de control.
+>🔑 *Transformada de LaPlace:*La Transformada de LaPlace es una técnica matemática comúnmente empleada para examinar sistemas lineales invariantes en el tiempo, tales como mecanismos, circuitos eléctricos y sistemas de control.
+
+La Transformada de Laplace es una herramienta matemática crucial en ingeniería, utilizada para simplificar el análisis de sistemas lineales e invariantes en el tiempo, como circuitos eléctricos, sistemas mecánicos y sistemas de control. Su función principal es convertir funciones del tiempo continuo en el dominio complejo, transformando problemas descritos por ecuaciones diferenciales en ecuaciones algebraicas más manejables. Esta conversión facilita la resolución de ecuaciones diferenciales y permite un análisis detallado de la estabilidad y la respuesta de los sistemas ante diversas entradas. Al examinar la ubicación de los polos en el plano s, los ingenieros pueden evaluar la estabilidad del sistema y prever su comportamiento dinámico, haciendo de la Transformada de Laplace una herramienta esencial para el diseño y la evaluación de sistemas complejos.
+
+>🔑 *Transformada Z:* La Transformada Z es un método matemático que se utiliza principalmente en el procesamiento digital de señales y en el control de sistemas y donde su objetivo principal es transformar una señal de tiempo discreto en una representación compleja en el dominio de la frecuencia.
+
+La Transformada Z permite a los ingenieros analizar la estabilidad y el comportamiento dinámico de sistemas discretos al evaluar la ubicación de los polos en el plano Z. Al hacerlo, proporciona una visión clara de cómo las señales se atenúan o amplifican a lo largo del tiempo, haciendo de la Transformada Z una herramienta indispensable para el diseño y la optimización de sistemas de control digital y procesamiento de señales.
 
 ## 3. Métodos de Evaluación de Estabilidad
+La estabilidad de un sistema discreto se evalúa mediante varios métodos, cada uno proporcionando una perspectiva diferente sobre la respuesta del sistema.
 
+### Ubicación de Polos
+Los polos de un sistema discreto se obtienen al analizar la ecuación característica del sistema, que se forma a partir de la función de transferencia. La estabilidad de un sistema discreto depende de la posición de estos polos en el plano Z.
+
+#### Criterios de Estabilidad:
+
+1. Estabilidad Global: Un sistema discreto es estable si todos sus polos están dentro del círculo unitario en el plano Z (es decir, si todos los polos tienen un módulo menor que 1). Esto garantiza que la respuesta del sistema a cualquier entrada será bounded (acotada) y no crecerá indefinidamente.
+2. Estabilidad Marginal: Un sistema es marginalmente estable si al menos uno de los polos está en el círculo unitario y ningún polo está fuera de él. Esto implica que el sistema puede tener una respuesta que permanece constante o crezca lentamente, pero no se vuelve inestable.
+3. Inestabilidad: Un sistema es inestable si al menos un polo está fuera del círculo unitario. En este caso, la respuesta del sistema crecerá sin límites, lo que indica que el sistema es inestable.
 
 ## 4. Estabilidad Asintótica
-
-
-💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
-
-$$R=\frac{V}{I}$$
-
-## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
-
-💡**Ejemplo 2:**
-
-![Figura de prueba](images/plantilla/Captura2.PNG)
-
-Figura 1. Figura de prueba
-
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
+Es una propiedad clave en el análisis de sistemas dinámicos, tanto en el contexto de sistemas continuos como discretos. En términos simples, un sistema es asintóticamente estable si, frente a una perturbación o una entrada, su salida regresa a un estado de equilibrio en el tiempo, y no solo esto, sino que lo hace de manera que se acerca al equilibrio conforme pasa el tiempo.
 
 ## 5. Estabilidad BIBO
-En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
+Un sistema es BIBO estable si para cualquier entrada acotada (bounded input), la salida también es acotada (bounded output). En otras palabras, si la entrada del sistema está limitada en magnitud, la salida del sistema también lo estará.
 
-💡**Ejemplo 3:** 
-
-| **Resultado** | **x = número de intentos hasta primer éxito** |
-|---------------|-----------------------------------------------|
-|       S       |                       1                       |
-|       FS      |                       2                       |
-|      FFS      |                       3                       |
-|      ...      |                      ...                      |
-|    FFFFFFS    |                       7                       |
-|      ...      |                      ...                      |
-
-Tabla 1. Tabla de ejemplo
-
-Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
 
 ## 6. Ejercicios
-Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
-
-💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
-
-## 7. Conclusiones
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
-
 
 ## Referencias
 Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
