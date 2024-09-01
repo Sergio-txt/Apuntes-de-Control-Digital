@@ -41,7 +41,7 @@ Desventajas:
 
 >🔑*Obtención de la Respuesta al Paso Analógica:*
 * Primero, se determina la respuesta al paso del filtro analógico. La respuesta al paso $h_a(t)$  es la salida del filtro cuando se aplica una entrada de escalón unitario $u(t)$ como entrada.
-*Matemáticamente, se puede expresar como  $h_a(t)$ donde $ha(t)\=L−1{Ha(s)s}h\_a(t) = \\mathcal{L}^{-1}\\left\\{\\frac{H\_a(s)}{s}\\right\\}ha​(t)\=L−1{sHa​(s)​}$
+*Matemáticamente, se puede expresar como  $h_a(t)$ donde $ha(t)\=\[ h_a(t) = \mathcal{L}^{-1} \left\{ \frac{H_a(s)}{s} \right\} \]$
 
 
 
