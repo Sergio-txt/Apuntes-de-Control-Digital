@@ -10,8 +10,7 @@ Una herramienta matemática fundamental para el análisis y diseño de sistemas 
 
 ## 1. Señales Analógicas y Digitales
 
->🔑 *Ecuacion en Diferencias:* Las señales analógicas son continuas tanto en el tiempo como en la amplitud, lo que significa que pueden llegar a tomar cualquier valor dentro de un rango continuo, representando información de manera fluida e ininterrumpida. 
-
+>🔑 *Ecuacion en Diferencias:* Una ecuación que muestra la relación entre los valores consecutivos de una secuencia y las diferencias entre ellos. A menudo se reorganizan como una fórmula recursiva para que la salida de un sistema pueda calcularse a partir de la señal de entrada y salidas pasadas.
 ![Señal Analóga](http://xkiller-damndx.mex.tl/imagesnew2/0/0/0/2/1/3/9/8/2/5/Standing_wave_2.gif)
 
 Figura 1. Señal Analóga
