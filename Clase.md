@@ -8,7 +8,7 @@ Una herramienta matemática fundamental para el análisis y diseño de sistemas 
 4. Aplicaciones Prácticas y Ejercicios
 5. Conclusiones
 
-## 1. Señales Analógicas y Digitales
+## 1. Representación matemática de los sistemas discretos
 
 >🔑 *Ecuacion en Diferencias:* Una ecuación que muestra la relación entre los valores consecutivos de una secuencia y las diferencias entre ellos. A menudo se reorganizan como una fórmula recursiva para que la salida de un sistema pueda calcularse a partir de la señal de entrada y salidas pasadas.
 ![Señal Analóga](http://xkiller-damndx.mex.tl/imagesnew2/0/0/0/2/1/3/9/8/2/5/Standing_wave_2.gif)
