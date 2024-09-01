@@ -128,74 +128,18 @@ Un sistema no causal es aquel cuyo comportamiento puede depender de valores futu
 * A menudo utilizados en análisis y diseño teórico.
 * Pueden ser aproximados mediante técnicas como el "retardo causal" para hacerlos realizables.
 
+## 5. Tiempo muerto en sistemas discretos
 
+El tiempo muerto en sistemas discretos se refiere al tiempo que transcurre entre la aplicación de una entrada y la observación de una respuesta correspondiente en la salida del sistema. Es una característica importante a tener en cuenta en el análisis y diseño de sistemas discretos, especialmente en sistemas de control y procesamiento de señales.
 
-
-
-
-Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
-### 3.2. Numeración de subsecciones
-Siga la numeración de la sección seguida de un punto y luego el número de la subsección.
-
-## 4. Ejemplos
-Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
-
-## 5. Ecuaciones
-Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
-
-💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
-
-$$R=\frac{V}{I}$$
-
-## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
-
-💡**Ejemplo 2:**
-
-![Figura de prueba](images/plantilla/Captura2.PNG)
-
-Figura 1. Figura de prueba
-
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
-
-## 7. Tablas
-En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
-
-💡**Ejemplo 3:** 
-
-| **Resultado** | **x = número de intentos hasta primer éxito** |
-|---------------|-----------------------------------------------|
-|       S       |                       1                       |
-|       FS      |                       2                       |
-|      FFS      |                       3                       |
-|      ...      |                      ...                      |
-|    FFFFFFS    |                       7                       |
-|      ...      |                      ...                      |
-
-Tabla 1. Tabla de ejemplo
-
-Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
-
-## 8. Código
-Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
-
-💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
-
-## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
-
-## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
+## 6. Conclusiones
+* La representación matemática de los sistemas discretos proporciona una manera precisa de modelar y analizar cómo un sistema responde a las entradas. Utiliza herramientas como ecuaciones en diferencias y funciones de transferencia para describir el comportamiento dinámico del sistema. La representación matemática permite la aplicación de técnicas de análisis y diseño en el dominio z, facilitando la comprensión de cómo el sistema maneja las señales discretas.
+* La Transformada Z es una herramienta crucial en el análisis de sistemas discretos, proporcionando una representación en el dominio z de señales y sistemas. Permite transformar ecuaciones en diferencias en funciones algebraicas más manejables, facilitando el análisis de estabilidad, control de sistemas. La Transformada Z es análoga a la Transformada de Laplace en sistemas continuos, y su uso simplifica el diseño y análisis de sistemas en el dominio de la frecuencia discreta.
+* 
 
 ## 11. Referencias
-1.CHAPRA, S.C. y CANALE, R.P M´etodos Numéricos para Ingenieros. McGraw-Hill, 1987.
-2.
+1. CHAPRA, S.C. y CANALE, R.P M´etodos Numéricos para Ingenieros. McGraw-Hill, 1987.
+2. "Linear Systems and Signals" por B.P. Lathi (2ª edición, 2005).
+3. "Discrete-Time Signal Processing" por Alan V. Oppenheim, Ronald W. Schafer y John R. Buck (3ª edición, 2010).
+4. "Modern Control Engineering" por Ogata Katsuhiko (5ª edición, 2010).
 
