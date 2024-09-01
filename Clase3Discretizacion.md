@@ -5,11 +5,21 @@ El título de cada clase, correspondiente al tema general que se trabaje en clas
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
-## 2. Definiciones
-Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
->🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
+## Indice
+1. Discretización de señales Analógicas
+2. Método de Invarianza al impulso
+3. Transformada Z
+4. Sistemas Causales y no causales
+5. Tiempo muerto en sistemas discretos
+6. Conclusiones
+7. Referencias
 
-## 3. Subsecciones
+
+
+## 1. Discretización de señales Analógicas
+La discretización de señales analógicas es el proceso mediante el cual una señal continua en el tiempo y en amplitud se convierte en una señal discreta, que es una secuencia de valores en instantes específicos. Este proceso es esencial para el procesamiento digital de señales, ya que permite que las señales analógicas sean manipuladas y analizadas utilizando sistemas digitales como computadoras y microcontroladores.
+
+## 2. Método de Invarianza al impulso
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
 Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
