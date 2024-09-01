@@ -2,12 +2,11 @@
 Una herramienta matemática fundamental para el análisis y diseño de sistemas de control digital es la Transformada Z. La Transformada Z permite convertir ecuaciones en diferencias, que describen la dinámica de sistemas discretos, en expresiones algebraicas más sencillas, de manera similar a la aplicación de la Transformada de Laplace en sistemas continuos. Esto facilita el diseño de controladores digitales que operan en tiempo discreto y el análisis de características del sistema como la estabilidad y el comportamiento transitorio. En el campo de la ingeniería, la Transformada Z es esencial para comprender cómo reaccionan los sistemas a diversas entradas y maximizar su rendimiento en aplicaciones donde las señales se muestran y procesan digitalmente, como en microcontroladores y sistemas de control automatizados.
 
 ## Indice
-1. Señales Analógicas y Digitales
-2. Procedimiento de Conversión A/D
-3. Procedimiento de Conversión D/A
-4. Implementación Física y Modelos Matemáticos
-5. Aplicaciones Prácticas y Ejercicios
-6. Conclusiones
+1. Representación matemática de los sistemas discretos
+2. Transformada Z
+3. Función de transferencia discreta
+4. Aplicaciones Prácticas y Ejercicios
+5. Conclusiones
 
 ## 1. Señales Analógicas y Digitales
 
