@@ -19,7 +19,15 @@ Es una técnica para obtener una función de transferencia digital a partir de u
 >🔑*Proceso de Transformación:*
 * Obtención de la Respuesta al Impulso Analógica:
 Primero, se determina la respuesta al impulso del filtro analógico. La respuesta al impulso 
-$\[ h_a(t) = \text{expresión matemática de } h_a(t) \]$ es la salida del filtro cuando se aplica un impulso unitario $δ(t)$ como entrada.
+ $h_a(t)$ es la salida del filtro cuando se aplica un impulso unitario $δ(t)$ como entrada.
+
+>🔑*Transformación a la Respuesta al Impulso Digital:*
+*La respuesta al impulso analógica  $h_a(t)$ se convierte en una secuencia discreta aplicando un muestreo en el tiempo. Esto se hace evaluando 
+ $h_a(t)$  en intervalos de tiempo $T$, donde $T$ es el período de muestreo del sistema digital.
+
+>🔑*Transformación de la Función de Transferencia:*
+* La función de transferencia del filtro digital $H(z)$  se obtiene a partir de la transformada Z de la respuesta al impulso digital. Esto se puede hacer utilizando la transformada Z de la secuencia discreta obtenida en el paso anterior.
+
 
 
 
