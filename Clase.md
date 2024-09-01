@@ -1,4 +1,4 @@
-# Fundamentos y Procedimientos de la Conversión A/D y D/A en Control Digital
+# Transformada Z de adelantos y atrasos
 La conversión entre señales analógicas y digitales es un proceso fundamental en los sistemas de control digital, en donde se requiere adaptar señales continuas provenientes del mundo físico a un formato que pueda ser procesado por sistemas digitales, y viceversa, por esta razón, dentro del ámbito de la ingeniería, este proceso reúne la recolección de datos a través de sensores que interactúan con señales, las cuales deben ser transformadas adecuadamente para que los controladores digitales puedan manejarlas de manera eficiente. En este sentido, la conversión A/D permite convertir una señal analógica, como temperatura, velocidad o humedad, en una señal digital para su procesamiento, mientras que la conversión D/A hace posible que las señales digitales se conviertan nuevamente a analógicas para controlar dispositivos en el mundo real.
 
 ## Indice
