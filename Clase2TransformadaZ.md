@@ -8,6 +8,7 @@ Una herramienta matemática fundamental para el análisis y diseño de sistemas 
 4. Sistemas Causales y no causales
 5. Tiempo muerto en sistemas discretos
 6. Conclusiones
+7. Referencias
 
 ## 1. Representación matemática de los sistemas discretos
 ### 1.1. *Ecuación en Diferencias:* Una ecuación que muestra la relación entre los valores consecutivos de una secuencia y las diferencias entre ellos. A menudo se reorganizan como una fórmula recursiva para que la salida de un sistema pueda calcularse a partir de la señal de entrada y salidas pasadas.
@@ -137,7 +138,7 @@ El tiempo muerto en sistemas discretos se refiere al tiempo que transcurre entre
 * La Transformada Z es una herramienta crucial en el análisis de sistemas discretos, proporcionando una representación en el dominio z de señales y sistemas. Permite transformar ecuaciones en diferencias en funciones algebraicas más manejables, facilitando el análisis de estabilidad, control de sistemas. La Transformada Z es análoga a la Transformada de Laplace en sistemas continuos, y su uso simplifica el diseño y análisis de sistemas en el dominio de la frecuencia discreta.
 * 
 
-## 11. Referencias
+## 7. Referencias
 1. CHAPRA, S.C. y CANALE, R.P M´etodos Numéricos para Ingenieros. McGraw-Hill, 1987.
 2. "Linear Systems and Signals" por B.P. Lathi (2ª edición, 2005).
 3. "Discrete-Time Signal Processing" por Alan V. Oppenheim, Ronald W. Schafer y John R. Buck (3ª edición, 2010).
