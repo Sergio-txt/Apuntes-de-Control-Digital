@@ -3,11 +3,9 @@
 ## Indice
 1. Discretización de señales Analógicas
 2. Método de Invarianza al impulso
-3. Transformada Z
-4. Sistemas Causales y no causales
-5. Tiempo muerto en sistemas discretos
-6. Conclusiones
-7. Referencias
+3. Método de Invarianza al Paso
+4. Conclusiones
+5. Referencias
 
 
 
@@ -36,83 +34,37 @@ Desventajas:
 * Distorsión de Frecuencia: El método puede introducir distorsiones en la respuesta en frecuencia debido a la aproximación de la transformación.
 * Limitaciones en el Diseño: Puede no ser adecuado para todos los tipos de filtros analógicos, especialmente si la respuesta al impulso analógica no es fácilmente muestreable.
 
-## 3. Método de Invarianza al impulso
+## 3. Método de Invarianza al Paso
  El Método de Invarianza al Paso es una técnica utilizada para diseñar filtros digitales a partir de filtros analógicos mediante la preservación de la respuesta al paso de los filtros. Este método se basa en la idea de que la respuesta de un sistema digital a una entrada de escalón unitario debe coincidir con la respuesta del filtro analógico a una entrada de escalón unitario.
 
 >🔑*Obtención de la Respuesta al Paso Analógica:*
 * Primero, se determina la respuesta al paso del filtro analógico. La respuesta al paso $h_a(t)$  es la salida del filtro cuando se aplica una entrada de escalón unitario $u(t)$ como entrada.
-*Matemáticamente, se puede expresar como  $$\[ h_a(t) = \mathcal{L}^{-1} { \frac{H_a(s)}{s}} \]$$
-
-
-
-
+*Matemáticamente, se puede expresar como  $$\[ h_a(t) = \mathcal{L}^{-1} { \frac{H_a(s)}{s}} \]$$  siendo $h_a(t)$ la función de transferencia del filtro analógico.
 
 >🔑*Transformación a la Respuesta al Paso Digital:*
-*La respuesta al impulso analógica $h_a(t)$ se convierte en una secuencia discreta aplicando un muestreo en el tiempo. Esto se hace evaluando 
- $h_a(t)$  en intervalos de tiempo $T$, donde $T$ es el período de muestreo del sistema digital.
-
+*La respuesta al paso del filtro digital $h_a[n]$ e obtiene muestreando la respuesta al paso analógica  $h_a(t)$  en intervalos regulares. Esto convierte la respuesta continua en una secuencia discreta.
+* La respuesta al paso digital se representa como una secuencia de valores discretos en función del índice $n$, es decir $h_d[n]$
+* 
 >🔑*Transformación de la Función de Transferencia:*
-* La función de transferencia del filtro digital $H(z)$  se obtiene a partir de la transformada Z de la respuesta al impulso digital. Esto se puede hacer utilizando la transformada Z de la secuencia discreta obtenida en el paso anterior.
+* La función de transferencia del filtro digital $H(z)$ se calcula a partir de la transformada Z de la respuesta al paso digital $h_d[n]$. Esto proporciona la representación en el dominio Z del filtro digital.
+
+Ventajas: 
+* Simplicidad: El método es relativamente sencillo y proporciona una forma directa de convertir filtros analógicos en digitales preservando la respuesta al paso.
+* Preservación de la Respuesta: Conserva la respuesta al paso del filtro analógico, lo que ayuda a mantener ciertas características del filtro original.
+
+ Desventajas
+* Distorsión de Frecuencia: La técnica puede introducir distorsiones en la respuesta en frecuencia debido a la aproximación utilizada para la transformación.
+* Limitaciones en el Diseño: Puede no ser adecuado para todos los tipos de filtros analógicos, especialmente si la respuesta al paso no se adapta bien a la discretización.
 
 
 
-## 4. Ejemplos
-Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
 
-## 5. Ecuaciones
-Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
-
-💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
-
-$$R=\frac{V}{I}$$
-
-## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
-
-💡**Ejemplo 2:**
-
-![Figura de prueba](images/plantilla/Captura2.PNG)
-
-Figura 1. Figura de prueba
-
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
-
-## 7. Tablas
-En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
-
-💡**Ejemplo 3:** 
-
-| **Resultado** | **x = número de intentos hasta primer éxito** |
-|---------------|-----------------------------------------------|
-|       S       |                       1                       |
-|       FS      |                       2                       |
-|      FFS      |                       3                       |
-|      ...      |                      ...                      |
-|    FFFFFFS    |                       7                       |
-|      ...      |                      ...                      |
-
-Tabla 1. Tabla de ejemplo
-
-Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
-
-## 8. Código
-Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
-
-💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
-
-## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
-
-## 10. Conclusiones
+## 4. Conclusiones
 Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
 
-## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+## 5. Referencias
+1. Oppenheim, A. V., & Schafer, R. W. (2009). Discrete-Time Signal Processing (3rd ed.). Prentice Hall.
+2. Kuo, B. C. (2003). Digital Control Systems: Theory, Hardware, and Software (3rd ed.). Oxford University Press.
+3. Franke, T., & Thomas, H. (2001). Digital Signal Processing and Digital Filters. Springer.
+4. Ogata, K. (2010). Discrete-Time Control Systems (2nd ed.). Prentice Hall.
+5. Kester, W. (2005). The Data Conversion Handbook. Analog Devices.
