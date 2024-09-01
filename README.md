@@ -5,7 +5,7 @@ La conversión entre señales analógicas y digitales es un proceso fundamental 
 1. Señales Analógicas y Digitales
 2. Procedimiento de Conversión A/D
 3. Procedimiento de Conversión D/A
-4. Implementación Física y Modelos Matemáticos
+4. Modelos Matemático
 5. Aplicaciones Prácticas y Ejercicios
 6. Conclusiones
 ## 1. Señales Analógicas y Digitales
@@ -25,7 +25,7 @@ Figura 1. Señal Analóga
 
 Figura 2. Digital
 
-Comparaiva entre señales
+#### Comparativa entre señales
 | Características 	| Señal Analogica 	| Señal Digital 	|
 |:---:	|:---:	|:---:	|
 | Continuidad 	| Fluida y continua, sin saltos. 	| Discreta, con intervalos definidos. 	|
@@ -34,10 +34,26 @@ Comparaiva entre señales
 | Calidad de Información 	| Puede perderse debido a ruido y distorsión. 	| Mantiene la integridad con menos pérdida. 	|
 
 ## 2. Procedimiento de Conversión A/D
+El proceso de conversión A/D se realiza en tres etapas: muestreo, cuantización y codificación.
+### Muestreo
+El muestreo es el proceso mediante el cual una señal analógica continua en el tiempo es capturada en intervalos de tiempo discretos, es decir que implica tomar "instantáneas" de la señal en momentos específicos, con el objetivo de obtener una secuencia de valores que puedan ser utilizados en sistemas digitales, por tanto hay dos aspectos que son esenciales en este proceso ya que incluye la frecuencia de muestreo, que es la tasa a la que se capturan los valores de la señal analógica, y el período de muestreo, que es el intervalo de tiempo entre cada muestra. 
+
+#### Teorema del muestreo
+En el teorema del muestreo establece que para representar correctamente una señal analógica en forma digital, la frecuencia de muestreo debe ser al menos el doble de la frecuencia máxima de la señal continua. Este principio, tambien conocido como el teorema de Nyquist-Shannon, asegura que la señal digital resultante conserve toda la información de la señal original, por tanto, si la frecuencia de muestreo es insuficiente, pueden surgir problemas como el aliasing, donde las frecuencias altas se confunden con frecuencias bajas, distorsionando la señal y comprometiendo la calidad de la representación digital.
+
+
+
+
+### Cuantización
+### Codificación
 ## 3. Procedimiento de Conversión D/A
-## 4. Implementación Física y Modelos Matemáticos
+
+## 4. Modelo Matemático
+
 ## 5. Aplicaciones Prácticas y Ejercicios
+
 ## 6. Conclusiones
+
 ## Referencias
 [1] “Comunicaciones”. Tipos y Modos de Comunicaciones. Accedido el 28 de agosto de 2024. [En línea]. Disponible: http://xkiller-damndx.mex.tl/frameset.php?url=/1488142_Caracteristicas-de-las-senales-y-Conceptos-de-Ondas.html
 
