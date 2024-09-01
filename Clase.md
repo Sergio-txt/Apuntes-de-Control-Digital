@@ -85,6 +85,6 @@ Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas t
 Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
 
 ## 11. Referencias
-*Barrero Mendoza, Oscar. Sistemas de control digital. Universidad de Ibagué, 2021. Digitalia.
-*Chen, C. T. Analog and Digital control design. Saunders College Publishing.
+1.Barrero Mendoza, Oscar. Sistemas de control digital. Universidad de Ibagué, 2021. Digitalia.
+2.Chen, C. T. Analog and Digital control design. Saunders College Publishing.
 
