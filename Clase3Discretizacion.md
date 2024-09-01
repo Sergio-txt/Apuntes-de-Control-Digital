@@ -1,9 +1,4 @@
-# Discretización de controladores
-Analógicos
-
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+# Discretización de controladores Analógicos
 
 ## Indice
 1. Discretización de señales Analógicas
@@ -20,11 +15,13 @@ Agregue todos los subtítulos que considere necesarios para estructurar el conte
 La discretización de señales analógicas es el proceso mediante el cual una señal continua en el tiempo y en amplitud se convierte en una señal discreta, que es una secuencia de valores en instantes específicos. Este proceso es esencial para el procesamiento digital de señales, ya que permite que las señales analógicas sean manipuladas y analizadas utilizando sistemas digitales como computadoras y microcontroladores.
 
 ## 2. Método de Invarianza al impulso
-Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
-### 3.1. Título de subsecciones
-Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
-### 3.2. Numeración de subsecciones
-Siga la numeración de la sección seguida de un punto y luego el número de la subsección.
+Es una técnica para obtener una función de transferencia digital a partir de una función de transferencia analógica. La idea central es que la respuesta al impulso de un filtro analógico se puede mapear directamente a la respuesta al impulso de un filtro digital mediante una transformación.
+>🔑*Proceso de Transformación:*
+* Obtención de la Respuesta al Impulso Analógica:
+Primero, se determina la respuesta al impulso del filtro analógico. La respuesta al impulso 
+$\[ h_a(t) = \text{expresión matemática de } h_a(t) \]$ es la salida del filtro cuando se aplica un impulso unitario $δ(t)$ como entrada.
+
+
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
