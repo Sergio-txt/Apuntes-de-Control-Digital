@@ -5,8 +5,8 @@ Una herramienta matemática fundamental para el análisis y diseño de sistemas 
 1. Representación matemática de los sistemas discretos
 2. Solucion de Ecuaciones en Diferencias
 3. Transformada Z
-4. Función de transferencia discreta
-5. Aplicaciones Prácticas y Ejercicios
+4. Sitemas Causales y no causales
+5. Tiempo muerto en sistemas discretos
 6. Conclusiones
 
 ## 1. Representación matemática de los sistemas discretos
@@ -53,15 +53,15 @@ Despejando $Y(z)$:
 $$Y(z) = \frac{U(z)}{1 - 0.5z^{-1}}$$
 Luego, aplicamos la Transformada Z inversa para encontrar $y(k)$
 
-## 2. Transformada Z
-### 2.1. *Transformada Z de un Atraso*
+## 3. Transformada Z
+### 3.1. *Transformada Z de un Atraso*
 La Transformada Z es una herramienta matemática utilizada en el análisis y diseño de sistemas discretos. Es particularmente útil en el procesamiento digital de señales y en el control de sistemas discretos.
 Dada una secuencia de tiempo discreto $x[n]$, la Transformada Z de $x[n]$ se define como:
 $$X(z) = \sum_{n=-\infty}^{\infty} x[n] z^{-n}$$
 donde $Z$ es una variable compleja.
-### 2.2. *Atraso de una Secuencia*
-Un atraso de $k$ unidades en una secuencia discreta $x[n]$ se representa como $x[n−k]$. Esto significa que cada valor de la secuencia se retrasa $k$ pasos en el tiempo.
 
+### 3.2. *Atraso de una Secuencia*
+Un atraso de $k$ unidades en una secuencia discreta $x[n]$ se representa como $x[n−k]$. Esto significa que cada valor de la secuencia se retrasa $k$ pasos en el tiempo.
 Para encontrar la Transformada Z de la secuencia retrasada $x[n−k]$, utilizamos la propiedad del atraso de la Transformada Z:
 $$\mathcal{Z}\{x[n - k]\} = z^{-k} X(z)$$
 >Donde
@@ -70,7 +70,7 @@ $$\mathcal{Z}\{x[n - k]\} = z^{-k} X(z)$$
 * $X(z)$ es la Transformada Z de la secuencia original $x[n]%
 * $z^{-k}$ es un factor de escala que representa el atraso.
 
-### 2.2. Transformada Z de un Adelanto
+### 3.2. Transformada Z de un Adelanto
 En el contexto de señales y sistemas discretos, un adelanto en una secuencia se refiere a la operación en la que cada valor de la secuencia se avanza o se adelanta en el tiempo.
 Dada una secuencia discreta $x[n]$, un adelanto de $k$ unidades en la secuencia se representa como $x[n+k]$. Esto significa que cada valor de la secuencia se adelanta 
 $k$ pasos en el tiempo.
@@ -84,7 +84,7 @@ $$\mathcal{Z}\{x[n + k]\} = z^k X(z)$$
 * $z^{k}$ es un factor de escala que representa el adelanto.
 
 
-### 2.3 Funcion de tranferencia discreta
+### 3.3 Funcion de tranferencia discreta
 La función de transferencia de un sistema discreto es una representación matemática que relaciona la entrada y la salida del sistema en el dominio Z. Se define como el cociente entre la Transformada Z de la salida y la Transformada Z de la entrada, bajo condiciones iniciales nulas.
 Si $X(z)$ es la Transformada Z de la entrada $x[n]$ y $Y(z)$ es la Transformada Z de la salida $y[n]$, la función de transferencia $H(z)$ se define como:
 $$H(z) = \frac{Y(z)}{X(z)}$$
@@ -93,16 +93,30 @@ $$H(z) = \frac{Y(z)}{X(z)}$$
 * $Y(z)$ es la Transformada Z de la salida del sistema.
 * $X(z)$ es la Transformada Z de la entrada del sistema.
 
-### 2.4 Pasar de una función de transferencia en atraso a adelanto
+### 3.4 Pasar de una función de transferencia en atraso a adelanto
 Supongamos que tienes una función de transferencia en el dominio Z que involucra un atraso. La función de transferencia en atraso es:
 $$H(z) = \frac{Y(z)}{X(z)}$$
 donde $Y(z)$ y $X(z)$ están relacionadas a través del atraso en el tiempo.
 $z^{-k} \text{ a } \frac{a}{z^k}$ donde $k$ es el número de unidades de tiempo en el que se adelanta la secuencia.
 
-#### 2.4.1 Proceso 
->Escribe la Función de Transferencia Original:
-Supongamos que tienes una función de transferencia en atraso que tiene el siguiente formato:
+#### 3.4.1 Proceso 
+>🔑 *Escribe la Función de Transferencia Original:*
+* Supongamos que tienes una función de transferencia en atraso que tiene el siguiente formato:
+$$H(z) = \frac{b_0 + b_1 z^{-1} + b_2 z^{-2}}{1 + a_1 z^{-1} + a_2 z^{-2}}$$
+Aquí, los coeficientes 
+$$H(z) = \frac{b_0 + b_1 z^{-1} + b_2 z^{-2}}{1 + a_1 z^{-1} + a_2 z^{-2}}$$
+determinan la función de transferencia.
 
+>🔑 *Multiplica por Potencias de z:*
+* Para convertir el atraso en adelanto, multiplica el numerador y el denominador por $z^k$ donde $k$ es el número de unidades de adelanto. Si, por ejemplo, deseas adelantar la función por $k=2$ unidades, multiplicas por $z^2$ :
+$$H(z) = \frac{z^2 (1 + a_1 z^{-1} + a_2 z^{-2})}{z^2 (b_0 + b_1 z^{-1} + b_2 z^{-2})}$$
+
+>🔑 *Simplifica la Ecuación:*
+*Simplificando, obtienes:
+$$\[ H(z) = \frac{1 + a_1 z + a_2 z^2}{b_0 z^2 + b_1 z + b_2} \]$$
+Esta es la función de transferencia equivalente que ahora está en el formato de adelanto.
+
+## 3. Transformada Z
 
 
 
