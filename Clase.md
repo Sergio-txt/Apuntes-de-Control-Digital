@@ -35,13 +35,58 @@ Donde f(k) es una función que representa la entrada o una perturbación externa
 Este método consiste en calcular los valores sucesivos de la variable de estado de manera recursiva, utilizando los valores iniciales conocidos y aplicando la ecuación en diferencias repetidamente. Es especialmente útil para ecuaciones en diferencias lineales de primer orden o de bajo orden.
 Ejemplo: Si tienes una ecuación en diferencias de primer orden:
 $$y(k) = 0.5 \cdot y(k-1) + u(k)$$
-Puedes calcular $$y(k)$$ para $$k = 1, 2, 3 ...$$ usando un valor inicial  $$y(0)$$ y la secuencia de valores de  $$u(k)$$
+Puedes calcular $y(k)$ para $k = 1, 2, 3 ...$ usando un valor inicial $y(0)$ y la secuencia de valores de $u(k)$
 
-### 2.2. *Métodos Iterativos:*Transformada Z
+### 2.2. *Transformada Z de ecuacioens en diferencias*
+La Transformada Z es una herramienta poderosa para resolver ecuaciones en diferencias, especialmente en el análisis de sistemas de control digital. Este método convierte la ecuación en diferencias en una ecuación algebraica en el dominio Z, que es más fácil de manipular.
+
+>Pasos básicos:
+* Aplicar la Transformada Z: Conviertes la ecuación en diferencias en una ecuación en términos de la variable Z.
+* Resolver la ecuación algebraica: Despejas la variable de interés en el dominio Z.
+* Aplicar la Transformada Z inversa: Conviertes la solución obtenida en el dominio Z de vuelta al dominio del tiempo discreto, obteniendo la secuencia de valores de la variable de estado.
+
+Ejemplo: Para la ecuación en diferencias:
+$$yh(k) - 0.5 \cdot y(k-1) = u(k)$$
+La solución general de la ecuación homogénea asociada es:
+$$Y(z) - 0.5z^{-1} Y(z) = U(z)$$
+Despejando $Y(z)$:
+$$Y(z) = \frac{U(z)}{1 - 0.5z^{-1}}$$
+Luego, aplicamos la Transformada Z inversa para encontrar $y(k)$
+
+## 2. Transformada Z
+### 2.1. *Transformada Z de un Atraso*
+La Transformada Z es una herramienta matemática utilizada en el análisis y diseño de sistemas discretos. Es particularmente útil en el procesamiento digital de señales y en el control de sistemas discretos.
+Dada una secuencia de tiempo discreto $x[n]$, la Transformada Z de $x[n]$ se define como:
+$$X(z) = \sum_{n=-\infty}^{\infty} x[n] z^{-n}$$
+donde $Z$ es una variable compleja.
+### 2.2. *Atraso de una Secuencia*
+Un atraso de $k$ unidades en una secuencia discreta $x[n]$ se representa como $x[n−k]$. Esto significa que cada valor de la secuencia se retrasa $k$ pasos en el tiempo.
+
+Para encontrar la Transformada Z de la secuencia retrasada $x[n−k]$, utilizamos la propiedad del atraso de la Transformada Z:
+$$\mathcal{Z}\{x[n - k]\} = z^{-k} X(z)$$
+>Donde
+* $Z{⋅}$ denota la Transformada Z
+* $x[n−k]$ es la secuencia original retrasada por $k$ unidades
+* $X(z)$ es la Transformada Z de la secuencia original $x[n]%
+* $z^{-k}$ es un factor de escala que representa el atraso.
+
+### 2.2. Transformada Z de un Adelanto
+En el contexto de señales y sistemas discretos, un adelanto en una secuencia se refiere a la operación en la que cada valor de la secuencia se avanza o se adelanta en el tiempo.
+Dada una secuencia discreta $x[n]$, un adelanto de $k$ unidades en la secuencia se representa como $x[n+k]$. Esto significa que cada valor de la secuencia se adelanta 
+$k$ pasos en el tiempo.
+Para encontrar la Transformada Z de la secuencia adelantada  $x[n+k]$, utilizamos la propiedad del adelanto de la Transformada Z:
+$$\mathcal{Z}\{x[n + k]\} = z^k X(z)$$
+
+>Donde
+* $Z{⋅}$ denota la Transformada Z
+* $x[n+k]$ es la secuencia original adelantada por $k$ unidades
+* $X(z)$ es la Transformada Z de la secuencia original $x[n]%
+* $z^{k}$ es un factor de escala que representa el adelanto.
 
 
 
-### 3.1. Título de subsecciones
+
+
 Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
 ### 3.2. Numeración de subsecciones
 Siga la numeración de la sección seguida de un punto y luego el número de la subsección.
