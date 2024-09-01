@@ -10,7 +10,7 @@ Una herramienta matemática fundamental para el análisis y diseño de sistemas 
 
 ## 1. Señales Analógicas y Digitales
 
->🔑 *Señal Analóga:* Las señales analógicas son continuas tanto en el tiempo como en la amplitud, lo que significa que pueden llegar a tomar cualquier valor dentro de un rango continuo, representando información de manera fluida e ininterrumpida. 
+>🔑 *Ecuacion en Diferencias:* Las señales analógicas son continuas tanto en el tiempo como en la amplitud, lo que significa que pueden llegar a tomar cualquier valor dentro de un rango continuo, representando información de manera fluida e ininterrumpida. 
 
 ![Señal Analóga](http://xkiller-damndx.mex.tl/imagesnew2/0/0/0/2/1/3/9/8/2/5/Standing_wave_2.gif)
 
@@ -84,6 +84,6 @@ Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas t
 Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
 
 ## 11. Referencias
-1.Barrero Mendoza, Oscar. Sistemas de control digital. Universidad de Ibagué, 2021. Digitalia.
-2.Chen, C. T. Analog and Digital control design. Saunders College Publishing.
+1.CHAPRA, S.C. y CANALE, R.P M´etodos Numéricos para Ingenieros. McGraw-Hill, 1987.
+2.
 
